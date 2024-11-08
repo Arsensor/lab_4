@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang = "ru">
+<head>
+  <title>Лабораторная работа №3</title>
+  <meta charset = "utf-8">
+  <meta name="description" content="HTML-page with four scripts">
+  <meta name="keywords" content="HTML, CSS, JavaScript">
+  <meta name="author" content="Arsenii Zaitsev">
+  <link rel="stylesheet" href="../style/style.css">
+  <script src = "../js/script_1.js"></script>
+    <style>
+    </style>
+  </head>
+<body>
+  <header>
+     <h1>Ветвление</h1>
+  </header>
+  <main>
+    <div class="topnav" style="background-color: #00568c; padding: 40px;">
+      <a class="active" href="../index.html">Главная</a>
+      <a href="exercise_1.html">Первое Задание</a>
+      <a href="exercise_2.html">Второе задание</a>
+      <a href="exercise_3.html">Третье задание</a>
+      <a href="exercise_4.html">Четвертое задание</a>
+      <div class="topnav-right">
+        <a href="https://github.com/Arsensor">Мой GitHub</a>
+      </div>
+    </div>
+    <div>
+      <h2 style="text-align: center;">Изучение функций ввода-вывода данных, программирование вычислений, значения выражения</h2>
+    </div>
+    <div>
+      <p>Задание №1
+        Даны три целых числа: A, B, C. Проверить истинность высказывания: «Число B находится между числами A и C».
+      </p>
+      <label for="name_a_1">Введите три целых числа: A, B, C.</label>
+      <input type="number" id="name_a_1" placeholder="A">
+      <input type="number" id="name_b_1" placeholder="B">
+      <input type="number" id="name_c_1" placeholder="C">
+      <button id="send_1" onclick="exercise_1()">Готово</button> 
+      <p id = "output_exercise_1"></p>
+    </div>
+  </main>
+  <footer>
+    Студент Зайцев Арсений ПИЭ-32 
+  </footer>
+</body>
+</html>
