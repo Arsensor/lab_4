@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang = "ru">
 <head>
-  <title>Лабораторная работа №3</title>
+  <title>Лабораторная работа №4</title>
   <meta charset = "utf-8">
   <meta name="description" content="HTML-page with four scripts">
   <meta name="keywords" content="HTML, CSS, JavaScript">
@@ -13,32 +13,28 @@
   </head>
 <body>
   <header>
-     <h1>Ветвление</h1>
+     <h1>Циклы</h1>
   </header>
   <main>
-    <div class="topnav" style="background-color: #00568c; padding: 40px;">
-      <a class="active" href="../index.html">Главная</a>
-      <a href="exercise_1.html">Первое Задание</a>
+    <div class="topnav">
+      <a href="../index.html">Главная</a>
+      <a class="active" href="exercise_1.html">Первое Задание</a>
       <a href="exercise_2.html">Второе задание</a>
-      <a href="exercise_3.html">Третье задание</a>
-      <a href="exercise_4.html">Четвертое задание</a>
-      <div class="topnav-right">
-        <a href="https://github.com/Arsensor">Мой GitHub</a>
-      </div>
+      <a href="https://github.com/Arsensor">Мой GitHub</a>
     </div>
     <div>
-      <h2 style="text-align: center;">Изучение функций ввода-вывода данных, программирование вычислений, значения выражения</h2>
+      <h2>Изучение циклических алгоритмов, операторов цикла, программирование циклического вычислительного процесса.</h2>
     </div>
     <div>
       <p>Задание №1
-        Даны три целых числа: A, B, C. Проверить истинность высказывания: «Число B находится между числами A и C».
+        Дано целое число N и набор из N целых чисел. Вывести в том же порядке все четные числа из данного набора и количество K таких чисел.
       </p>
-      <label for="name_a_1">Введите три целых числа: A, B, C.</label>
-      <input type="number" id="name_a_1" placeholder="A">
-      <input type="number" id="name_b_1" placeholder="B">
-      <input type="number" id="name_c_1" placeholder="C">
+      <label for="name_a_1">Введите количество чисел: N, а также сам набор чисел: Set.</label>
+      <input type="number" id="name_n_1" placeholder="N">
+      <input type="text" id="name_set_1" placeholder="1, 2, 3, 4...">
       <button id="send_1" onclick="exercise_1()">Готово</button> 
-      <p id = "output_exercise_1"></p>
+      <p id = "output_exercise_1_1"></p>
+      <p id = "output_exercise_1_2"></p>
     </div>
   </main>
   <footer>
