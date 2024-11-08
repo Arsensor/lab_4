@@ -1,26 +1,26 @@
 <!DOCTYPE html>
-<html lang = "ru">
+<html lang="ru">
 <head>
   <title>Лабораторная работа №4</title>
-  <meta charset = "utf-8">
+  <meta charset="utf-8">
   <meta name="description" content="HTML-page with four scripts">
   <meta name="keywords" content="HTML, CSS, JavaScript">
   <meta name="author" content="Arsenii Zaitsev">
   <link rel="stylesheet" href="../style/style.css">
-  <script src = "../js/script_1.js"></script>
-    <style>
-    </style>
-  </head>
+  <script src="../js/script_1.js"></script>
+  <script src="../js/script_bm.js"></script>
+</head>
 <body>
   <header>
-     <h1>Циклы</h1>
+    <h1>Циклы</h1>
   </header>
   <main>
-    <div class="topnav">
+    <div class="topnav" id="myTopnav">
       <a href="../index.html">Главная</a>
       <a class="active" href="exercise_1.html">Первое Задание</a>
       <a href="exercise_2.html">Второе задание</a>
       <a href="https://github.com/Arsensor">Мой GitHub</a>
+      <a class="icon" id="menu" onclick="toggleMenu()">&#9776;</a>
     </div>
     <div>
       <h2>Изучение циклических алгоритмов, операторов цикла, программирование циклического вычислительного процесса.</h2>
@@ -33,8 +33,8 @@
       <input type="number" id="name_n_1" placeholder="N">
       <input type="text" id="name_set_1" placeholder="1, 2, 3, 4...">
       <button id="send_1" onclick="exercise_1()">Готово</button> 
-      <p id = "output_exercise_1_1"></p>
-      <p id = "output_exercise_1_2"></p>
+      <p id="output_exercise_1_1"></p>
+      <p id="output_exercise_1_2"></p>
     </div>
   </main>
   <footer>
