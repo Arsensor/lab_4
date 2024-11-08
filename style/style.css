@@ -28,7 +28,6 @@ h2 {
   overflow: hidden;
   background-color: #00568c;
   padding: 10px 0;
-  position: relative;
 }
 .topnav a {
   float: left;
@@ -38,6 +37,9 @@ h2 {
   padding: 10px 15px;
   font-size: 18px;
   transition: background-color 0.3s; 
+}
+.topnav .icon{
+  display: none;
 }
 .topnav a:hover {
   background-color: #91ceff;
