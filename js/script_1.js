@@ -14,16 +14,21 @@ function exercise_1(){ //Объявление функции
             if (isNaN(arr_number_2[i]) || arr_number_2[i] == "" || Number(number_1) != arr_number_2.length) { //Проверка
                 alert("Введите ещё раз корректные числа в Set"); //Вывод
                 return;
-            }     
-        }
-        for (i = 0; i < number_1; i++) { //Цикл
-            if (arr_number_2[i] % 2 == 0) { //Проверка четности
-                answer += arr_number_2[i] + ", "; //Формирование ответа
-                k++; //Счетчик количества
+            } else { //Иначе
+                if (arr_number_2[i] % 2 == 0) { //Проверка четности
+                    answer += arr_number_2[i] + ", "; //Формирование ответа
+                    k++; //Счетчик количества
+                }
             }
         }
-        document.getElementById("output_exercise_1_1").innerHTML = "Четные цифры: " + answer.slice(0, -2) + "."; //Вывод
-        document.getElementById("output_exercise_1_2").innerHTML = "Их количество: " + k + "."; //Вывод
+        if (answer.length != 0) {
+            document.getElementById("output_exercise_1_1").innerHTML = "Четные цифры: " + answer.slice(0, -2) + "."; //Вывод
+            document.getElementById("output_exercise_1_2").innerHTML = "Их количество: " + k + "."; //Вывод
+            return;   
+        } else {
+            document.getElementById("output_exercise_1_1").innerHTML = "Четные цифры: Не обнаружено."; //Вывод
+            document.getElementById("output_exercise_1_2").innerHTML = "Их количество: 0."; //Вывод
         return; 
+        }
     }
 }
